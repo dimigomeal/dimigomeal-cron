@@ -1,0 +1,8 @@
+CREATE TABLE meals (
+  idx INTEGER PRIMARY KEY AUTOINCREMENT,
+  id INTEGER NOT NULL,
+  date TEXT NOT NULL,
+  breakfast TEXT,
+  lunch TEXT,
+  dinner TEXT
+);
