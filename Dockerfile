@@ -1,4 +1,4 @@
-FROM rust:1.77 AS builder
+FROM rust:1.77-bullseye AS builder
 WORKDIR /usr/src/dimigomeal-cron
 
 COPY . .
