@@ -37,7 +37,7 @@ async fn main() {
     let conn = Connection::open(db_path).unwrap();
 
     let list_res =
-        reqwest::get("https://www.dimigo.hs.kr/index.php?mid=school_cafeteria&page=10").await;
+        reqwest::get("https://www.dimigo.hs.kr/index.php?mid=school_cafeteria&page=1").await;
     match list_res {
         Ok(res) => {
             let list_html = res.text().await.unwrap();
